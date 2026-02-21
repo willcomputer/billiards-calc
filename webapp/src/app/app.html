@@ -1,0 +1,8 @@
+<div class="container"> 
+    <div class="circle"></div>
+    <input [(ngModel)]="sliderPosition" (change)="calculateShot($event)" class="slider" type="range" min="-90" max="90">
+</div>
+
+<div class="container">
+    <p>Cut Angle: {{sliderPosition}}&deg;</p>
+</div>
